@@ -3,7 +3,7 @@ let playButton;
 let smoothingSlider;
 
 function preload() {
-  sound = loadSound('pain.mp3');
+  sound = loadSound('singleMoment.mp3');
 }
 
 function setup() {
@@ -16,7 +16,7 @@ function setup() {
   playButton.position(10, height + 10);
   playButton.mousePressed(togglePlay);
 
-  smoothingSlider = createSlider(1, 10, 3);
+  smoothingSlider = createSlider(1,100,70);
   smoothingSlider.position(100, height + 10);
   smoothingSlider.style('width', '200px');
 }

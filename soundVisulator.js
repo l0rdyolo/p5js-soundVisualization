@@ -67,6 +67,6 @@ class SoundVisualizer {
       let currentTime = this.sound.currentTime();
       let progress = currentTime / this.sound.duration();
       let index = floor(progress * this.smoothedPeaks.length);
-      return map(this.smoothedPeaks[index], -1, 1, 1, 20);
+      return map(this.smoothedPeaks[index], -1, 1, 5, 20);
     }
   }
